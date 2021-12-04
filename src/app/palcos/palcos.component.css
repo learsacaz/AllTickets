@@ -1,0 +1,148 @@
+.contenedor{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.palcos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.palco{
+    display: flex;
+    flex-flow: row;
+}
+.palcosA, .palcosB{
+    font-size: 20px;
+    width: 8.1vw;
+    height: 70px;
+    padding: 3px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: solid white;
+    cursor: pointer;
+}
+.palcosA{
+    background-color: rgb(141, 213, 235);
+}
+.palcosA:hover{
+    background-color: rgb(73, 140, 160);
+}
+.palcosB{
+    background-color: rgb(203, 67, 207);
+}
+.palcosB:hover{
+    background-color: rgb(129, 25, 133);
+}
+.palcosC{
+    font-size: 20px;
+    width: 97.2vmax;
+    height: 360px;
+    padding: 3px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: solid white;
+    background-color: rgb(37, 122, 59);
+}
+.tarima4,.tarima11{
+    width: 40.6vw;
+    height: 70px;
+    padding: 3px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(34, 34, 34);
+    border: solid white;
+}
+.tarima4{
+    font-size: 20px;
+    border-bottom: none;
+    justify-content: center;
+    align-items:flex-end;
+}
+.tarima11{
+    font-size: 0px;
+    border-top: none;
+}
+/*--------------RESPOSNIVE--------------*/
+@media(min-width:2550px){
+    .palcosA, .palcosB{
+        font-size: 40px;
+        height: 210px;
+    }
+    .tarima4,.tarima11{
+        height: 210px;
+    }
+    .tarima4{
+        font-size: 45px;
+    }
+    .palcosC{
+        font-size: 50px;
+        height: 500px;
+    }
+}
+@media(max-width:1440px){
+    .palcosC{ 
+        width: 98%;
+    }
+    .palcosA, .palcosB{
+        font-size: 25px;
+        height: 100px;
+    }
+    .tarima4,.tarima11{
+        height: 100px;
+    }
+    .tarima4{
+        font-size: 28px;
+    }
+}
+@media(max-width:1025px){
+    .palcosA, .palcosB{
+        font-size: 23px;
+    }
+    .tarima4{
+        font-size: 25px;
+    }
+}
+@media(max-width:1024px){
+    .palcosA, .palcosB{
+        font-size: 20px;
+    }
+}
+@media(max-width:425px){
+    .palcosA, .palcosB{
+        font-size: 19px;
+        height: 60px;
+    }
+    .tarima4,.tarima11{
+        height: 60px;
+    }
+}
+@media(max-width:320px){
+    .palcosA, .palcosB{
+        font-size: 15px;
+        height: 50px;
+    }
+    .tarima4{
+        font-size: 15px;
+    }
+    .tarima4,.tarima11{
+        height: 50px;
+    }
+}

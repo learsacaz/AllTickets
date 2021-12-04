@@ -1,0 +1,22 @@
+<div class="contenedor">
+    <!--Parte azul-->
+    <div class="palcos">
+        <div class="palco" *ngFor="let palcoA of palcosA"> 
+            <div class="palcosA">{{palcoA}}</div> 
+            <!--Tarima-->
+            <div class="tarima{{palcoA}}" *ngIf="palcoA == 4 || palcoA == 11"> TARIMA </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Parte morada-->
+    <div class="palcos">
+        <div class="palcosB" *ngFor="let palcoB of palcosB">
+            {{palcoB}}  
+        </div>
+    </div>
+    <!--Parte verde-->
+    <div class="palcosC">
+        <h1>General</h1>
+    </div>
+</div>
