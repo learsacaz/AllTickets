@@ -10,7 +10,6 @@ export class PalcosComponent implements OnInit {
   palcosA:Array<any>=[];
   palcosB:Array<any>=[];
   i:any;
-  numero=21;
 
   constructor() { 
     for(this.i=1;this.i<27;this.i++){
